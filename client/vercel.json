@@ -1,5 +1,5 @@
 {
-  "buildCommand": "npm install --force && cd client && npm install --force && npm run build",
-  "outputDirectory": "client/dist",
-  "installCommand": "npm install --force && cd client && npm install --force"
+  "buildCommand": "npm install && npm run build",
+  "outputDirectory": "dist",
+  "installCommand": "npm install"
 }
