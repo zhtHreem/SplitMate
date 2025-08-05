@@ -20,7 +20,7 @@ const handleNavigate = (id) => {
 };
   return (
     <>
-      <AppBar  position="fixed" elevation={0}sx={{  background: 'rgba(15, 15, 35, 0.95)',  backdropFilter: 'blur(20px)',  borderBottom: '1px solid rgba(255, 255, 255, 0.1)', transition: 'all 0.3s ease', }} >
+      <AppBar  position="fixed" elevation={0}sx={{ maxWidth:"100vw", background: 'rgba(15, 15, 35, 0.95)',  backdropFilter: 'blur(20px)',  borderBottom: '1px solid rgba(255, 255, 255, 0.1)', transition: 'all 0.3s ease', }} >
         <Toolbar sx={{ justifyContent: 'space-between', py: 1 }}>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Logo />
