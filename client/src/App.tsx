@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router,Navigate, Routes, Route } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import { CssBaseline } from '@mui/material';
 import { theme } from './styles/themes';
@@ -14,6 +14,7 @@ function App() {
       <CssBaseline />
       <Router>
         <Routes>
+          <Route path="/" element={<Navigate to="/home" replace />} />
           <Route path="/home" element={<HomePage />} />
          <Route path="/group/:id" element={<GroupPage />} />
          <Route path="/aboutus" element={<AboutUsPage />} />
